@@ -6,8 +6,6 @@ function AuthWrapper({ children }) {
   const { isLoading, error, isAuthenticated, user } = useAuth0();
   const isUser = isAuthenticated && user;
 
-  console.log(isUser);
-
   if (isLoading) {
     return (
       <Wrapper>
